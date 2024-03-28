@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+/* Estilos generales */
+* {
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Contenedor principal */
+.container {
+    padding: 30px;
+    max-width: 1200px;
+    margin: auto;
+    position: relative;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+  }
+  .grid-item {
+    padding: 20px;
+    text-align: center;
+
+  }
+
+.video{
+    justify-content: center;
+}
+/* Encabezado */
+header {
+    height: 300px;
+    position: relative;
+}
+
+/* Estilos para el encabezado */
+.header {
+    background-image: url(img/fondo.jpeg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+
+/* Menú de navegación */
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Estilos del logotipo */
+.logo {
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/* Estilos de la barra de navegación */
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    color: #FFFDFC;
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: #FFFDFC;
+    font-weight: 600;
+}
+
+.navbar ul li a:hover {
+    color: #E67E22;
+}
+
+/* Contenido del encabezado */
+.header-content {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.header-content p {
+    font-size: 18px;
+    color: #c5c5c5;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Estilos del botón */
+.btn-1 {
+    display: inline-block;
+    padding: 11px 35px;
+    background-color: #6E2C00;
+    color: #F9FAFC;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.btn-1:hover {
+    background-color: #E67E22;
+}
+
+/* Estilos generales de párrafo */
+p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Estilo para agregar margen inferior a la imagen */
+img {
+    margin-bottom: 20px;
+}
+
+/* Estilos para tablas */
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 8px;
+}
+
+ /* Estilos de la galeria */
+.galeria {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: 250px;
+   grid-gap: 20px;
+   padding: 30px 0;
+}
+
+.box img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.box:nth-child(1){
+   grid-column-start: span 2;
+}
+
+.box:nth-child(4){
+   grid-column-start: span 2;
+}
+
+
+@media(max-width:991px){
+   .galeria{
+       padding: 30px;
+       grid-template-columns: repeat(1, 1fr);
+   }
+
+   .box:nth-child(1){
+       grid-column-start: span 1;
+   }
+
+   .box:nth-child(4){
+       grid-column-start: span 1;
+   }
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Estilos de fuente corporal */
+body {
+    font-family: 'Poppins', sans-serif;
+}
